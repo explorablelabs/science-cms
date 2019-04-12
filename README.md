@@ -3,8 +3,9 @@
 This is a science-focused template built with [Victor Hugo](https://github.com/netlify/victor-hugo) and [Netlify CMS](https://github.com/netlify/netlify-cms), originalled designed and developed by [Darin Dimitroff](http://www.darindimitroff.com/), [spacefarm.digital](https://www.spacefarm.digital). Modified by [Explorable Labs](https://www.explorablelabs.com) to include the ability to draw small molecules (via smiles-drawer.js), and data charts (with Chart.js).
 
 ## [DEMO](https://science-cms-demo.netlify.com)
-* Check out an [example Admin page](https://cms-demo.netlify.com/#/collections/posts) for Netlify CMS.
+* Play with an [example Admin page](https://cms-demo.netlify.com/#/collections/posts) for Netlify CMS.
 * This SCIENCE template Admin page is the same as the Netlify demo, but includes extra widget options beyond the basics like Text, Image, File, etc. They are: Molecule (for drawing 2D molecules based on SMILES) and ChartCSV (for charting CSV data that is uploaded via a file). 
+* [Editing the page on the left](https://user-images.githubusercontent.com/45920345/56070185-51e61e80-5d3b-11e9-977f-525177004b43.png) to produce a preview on the right. 
 
 ## Getting started
 
