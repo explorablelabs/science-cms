@@ -1,5 +1,5 @@
 [build]
-  command = "yarn build"
+  command = "python src/scripts/gspread2md.py && yarn build"
   publish = "dist"
 [build.environment]
   YARN_VERSION = "1.9.4"
