@@ -37,11 +37,8 @@ list_of_molecules = ".".join(molecule_list)
 print list_of_molecules
 
 # Set location to write new files to.
-outputpath = Path("./site/content/post/")
-filename = "fake_ic50_data.md"
-outputfile = outputpath / filename
-print "opening!"
-new_yaml = open(outputfile, 'w')
+filename = "./site/content/post/fake_ic50_data.md"
+new_yaml = open(filename, 'w')
 # Empty string that we will fill with YAML formatted text based on data extracted from our CSV.
 yaml_text = ""
 yaml_text += "---\n"
