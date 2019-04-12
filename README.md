@@ -2,6 +2,10 @@
 
 This is a science-focused template built with [Victor Hugo](https://github.com/netlify/victor-hugo) and [Netlify CMS](https://github.com/netlify/netlify-cms), originalled designed and developed by [Darin Dimitroff](http://www.darindimitroff.com/), [spacefarm.digital](https://www.spacefarm.digital). Modified by [Explorable Labs](https://www.explorablelabs.com) to include the ability to draw 2D small molecules, 3D protein structures, and data charts.
 
+## [DEMO](https://science-cms-demo.netlify.com)
+* Check out an [example Admin page](https://cms-demo.netlify.com/#/collections/posts) for Netlify CMS.
+* This SCIENCE template Admin page is based on the Netlify one, but just includes a few 2 extra widget options: Molecule (for drawing 2D molecules based on SMILES) and ChartCSV (which allows upload of a CSV file, which must be formatted with 3 columns for this simple widget: sample,X-label, Y-label) 
+
 ## Getting started
 
 Use our deploy button to get your own copy of the repository. 
@@ -30,6 +34,8 @@ Then start the development server with `yarn start` or `npm start`.
 The template is based on small, content-agnostic partials that can be mixed and matched. The new partials are for molecule drawing and charts. The pre-built pages showcase just a few of the possible combinations. Refer to the `site/layouts/partials` folder for all available partials.
 
 Use Hugo’s `dict` functionality to feed content into partials and avoid repeating yourself and creating discrepancies.
+
+All of the coffee-related content on this site is from Netlify's original CMS demo, and remains here as humorous placeholder content.
 
 ## CSS
 

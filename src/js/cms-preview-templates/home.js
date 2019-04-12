@@ -46,9 +46,9 @@ export default class PostPreview extends React.Component {
 
             <div className="flex-l mhn2-l">
               <div className="w-40-l ph2-l">
-                <h2 className="f2 b lh-title mb2">{entry.getIn(["data", "values", "heading"])}</h2>
+                <h2 className="f2 b lh-title mb2">{entry.getIn(["data", "info", "heading"])}</h2>
 
-                <p>{entry.getIn(["data", "values", "text"])}</p>
+                <p>{entry.getIn(["data", "info", "text"])}</p>
               </div>
 
               <div className="w-60-l ph2-l">
