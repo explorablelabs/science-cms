@@ -1,0 +1,98 @@
+{{ $sep := "," }}
+{{ $xlabel := .xlabel }}
+{{ $ylabel := .ylabel }}
+{{ $date := .upload_date }}
+{{ $chartid := .chartid }}
+
+<!-- .csv is just the study ID for us to build the csv path -->
+<!-- printf result: content/studies/study_678.csv -->
+<!-- {{ $url := printf "content/studies/study_%s.csv" .csv }} -->
+<!-- {{ printf $url }} -->
+{{ $url := "content/studies_results/parsed_another_fake_file.csv" }}
+{{ $csv := getCSV $sep $url }}
+
+{{ $.Scratch.Set "nbLines" 0 }}
+{{ range $i, $v1 := $csv }}
+    {{ $.Scratch.Add "nbLines" 1 }}
+{{ end }}
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js"></script>
+
+<canvas id="{{ $chartid }}" width="400" height="200"></canvas>
+<script>
+
+
+var plotData = {
+    datasets: [             /* will be filled with the next loop */
+{{ range $i, $v1 := $csv }}/* loop lines from CSV files */
+  {{ range $j, $v2 := . }}
+    {{ if eq $j 0 }}    /* label for line */
+    {
+      label: {{ . }},
+      data: [
+    {{ else }}
+      {
+      {{ $xy_string := split . "," }} /* write out x: y: string for each data point */
+      {{ $x := index $xy_string 0 }}
+      {{ $xparts := split $x ": " }}
+      {{ $x := index $xparts 1 }}
+      {{ $y := index $xy_string 1 }}
+      {{ $yparts := split $y ": " }}
+      {{ $y := index $yparts 1 }}
+        x: {{ float $x }},
+        y: {{ float $y }}
+      },
+    {{ end }}
+  {{ end }}
+      ],
+  {{ if ne $i 0 }} /* beyond first row, use dotted lines */
+      borderDash: [{{mul $i 2}},{{mul $i 4}}],
+  {{ end }}
+      pointStyle: 'rectRounded',
+      lineTension: 0,
+      fill: false,
+      showLine: true
+    },
+{{ end }}
+  ]
+};
+
+var ctx = document.getElementById("{{ $chartid }}").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'scatter',
+    data: plotData,
+    options: {
+        responsive: true,
+        legend: {
+          position: 'top',
+          display: true
+        },
+        title: {
+          display: true,
+          text: 'Uploaded data: {{ $date }}'
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                },
+                scaleLabel: {
+                  display: true,
+                  labelString: '{{ $ylabel }}'
+                }
+            }],
+            xAxes: [{
+                type: 'linear',
+                position: 'bottom',
+                ticks: {
+                    beginAtZero:true
+                },
+                scaleLabel: {
+                  display: true,
+                  labelString: '{{ $xlabel }}'
+                }
+            }]
+        }
+    }
+});
+</script>
