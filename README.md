@@ -1,10 +1,10 @@
 # Science Hugo template for Netlify CMS with Netlify Identity
 
-This is a science-focused template built with [Victor Hugo](https://github.com/netlify/victor-hugo) and [Netlify CMS](https://github.com/netlify/netlify-cms), originalled designed and developed by [Darin Dimitroff](http://www.darindimitroff.com/), [spacefarm.digital](https://www.spacefarm.digital). Modified by [Explorable Labs](https://www.explorablelabs.com) to include the ability to draw 2D small molecules, 3D protein structures, and data charts.
+This is a science-focused template built with [Victor Hugo](https://github.com/netlify/victor-hugo) and [Netlify CMS](https://github.com/netlify/netlify-cms), originalled designed and developed by [Darin Dimitroff](http://www.darindimitroff.com/), [spacefarm.digital](https://www.spacefarm.digital). Modified by [Explorable Labs](https://www.explorablelabs.com) to include the ability to draw small molecules (via smiles-drawer.js), and data charts (with Chart.js).
 
 ## [DEMO](https://science-cms-demo.netlify.com)
 * Check out an [example Admin page](https://cms-demo.netlify.com/#/collections/posts) for Netlify CMS.
-* This SCIENCE template Admin page is based on the Netlify one, but just includes a few 2 extra widget options: Molecule (for drawing 2D molecules based on SMILES) and ChartCSV (which allows upload of a CSV file, which must be formatted with 3 columns for this simple widget: sample,X-label, Y-label) 
+* This SCIENCE template Admin page is the same as the Netlify demo, but includes extra widget options beyond the basics like Text, Image, File, etc. They are: Molecule (for drawing 2D molecules based on SMILES) and ChartCSV (for charting CSV data that is uploaded via a file). 
 
 ## Getting started
 
