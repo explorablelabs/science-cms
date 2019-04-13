@@ -1,5 +1,9 @@
 # Science Hugo template for Netlify CMS with Netlify Identity
 
+* If you would like to contribute:
+  * Right now chart csv path is hard-coded. Need to use the existing File upload widget, and get the csv path from there.
+  * Current example shows drawing 2D molecules that come from a Google sheet. Need to also create a molecule "widget" that can be modularly added to new pages.
+
 This is a science-focused template built with [Victor Hugo](https://github.com/netlify/victor-hugo) and [Netlify CMS](https://github.com/netlify/netlify-cms), originalled designed and developed by [Darin Dimitroff](http://www.darindimitroff.com/), [spacefarm.digital](https://www.spacefarm.digital). Modified by [Explorable Labs](https://www.explorablelabs.com) to include the ability to draw small molecules (via smiles-drawer.js), and data charts (with Chart.js).
 
 ## [DEMO](https://science-cms-demo.netlify.com)
