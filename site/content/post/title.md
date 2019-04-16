@@ -5,8 +5,7 @@ description: >-
   Here is an introduction with some thoughts about this target. Below is an
   image and some other info:
 image: /img/litemol_screenshot.png
-molecule: >-
-  CC1CCC2CC(C(=CC=CC=CC(CC(C(=O)C(C(C(=CC(C(=O)CC(OC(=O)C3CCCCN3C(=O)C(=O)C1(O2)O)C(C)CC4CCC(C(C4)OC)O)C)C)O)OC)C)C)C)OC
+molecule: CC1=C(C=C(C=C1)NC(=O)C2=CC=C(C=C2)CN3CCN(CC3)C)NC4=NC=CC(=N4)C5=CN=CC=C5
 ---
 # Here
 
