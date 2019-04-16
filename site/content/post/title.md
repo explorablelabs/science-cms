@@ -6,6 +6,9 @@ description: >-
   image and some other info:
 image: /img/litemol_screenshot.png
 molecule: CC1=C(C=C(C=C1)NC(=O)C2=CC=C(C=C2)CN3CCN(CC3)C)NC4=NC=CC(=N4)C5=CN=CC=C5
+chart_csv: /img/parsed_another_fake_file.csv
+chart_xlabel: Time
+chart_ylabel: Measure
 ---
 # Here
 
