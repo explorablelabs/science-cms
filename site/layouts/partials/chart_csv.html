@@ -1,5 +1,4 @@
 {{ $url := .csv }}
-{{ printf $url }}
 {{ $sep := "," }}
 {{ $xlabel := .xlabel }}
 {{ $ylabel := .ylabel }}
@@ -7,6 +6,9 @@
 {{ $chartid := .chartid }}
 <!-- Using chartid is necessary to put more than one chart on a page -->
 
+{{ printf $url }}
+
+{{ $url := "static/img/parsed_another_fake_file.csv" }}
 {{ $csv := getCSV $sep $url }}
 
 {{ $.Scratch.Set "nbLines" 0 }}
