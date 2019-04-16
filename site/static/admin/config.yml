@@ -2,7 +2,6 @@ backend:
   name: git-gateway
 
 media_folder: "site/static/img" # Folder where user uploaded files should go
-public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
@@ -17,7 +16,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Molecule", name: "molecule", widget: "string", required: false}
       - {label: "Chart CSV file", name: "chart_csv", widget: "file", required: false, media_library: {config: {multiple: false}}}
-      - {label: "Chart y-label (required for chart)", name: "chart_xlabel", widget: "string", required: false}
+      - {label: "Chart x-label (required for chart)", name: "chart_xlabel", widget: "string", required: false}
       - {label: "Chart y-label (required for chart)", name: "chart_ylabel", widget: "string", required: false}
       
   - name: "pages"
