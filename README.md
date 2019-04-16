@@ -2,7 +2,6 @@
 
 * If you would like to contribute:
   * Right now chart csv path is hard-coded. Need to use the existing File upload widget, and get the csv path from there.
-  * Current example shows drawing 2D molecules that come from a Google sheet. Need to also create a molecule "widget" that can be modularly added to new pages.
 
 This is a science-focused template built with [Victor Hugo](https://github.com/netlify/victor-hugo) and [Netlify CMS](https://github.com/netlify/netlify-cms), originalled designed and developed by [Darin Dimitroff](http://www.darindimitroff.com/), [spacefarm.digital](https://www.spacefarm.digital). Modified by [Explorable Labs](https://www.explorablelabs.com) to include the ability to draw small molecules (via smiles-drawer.js), and data charts (with Chart.js).
 
@@ -11,9 +10,11 @@ This is a science-focused template built with [Victor Hugo](https://github.com/n
 * This SCIENCE template Admin page is the same as the Netlify demo, but includes extra widget options beyond the basics like Text, Image, File, etc. They are: Molecule (for drawing 2D molecules based on SMILES) and ChartCSV (for charting CSV data that is uploaded via a file). 
 * Edit the page by typing on the left side of the [admin editor](https://user-images.githubusercontent.com/45920345/56070185-51e61e80-5d3b-11e9-977f-525177004b43.png) to produce a preview on the right. Publish when you are ready!
 
-## Getting started
+![molecule widget](https://user-images.githubusercontent.com/45920345/56250201-77d53100-6063-11e9-9590-ae572dcf4d35.png) ![molecule pic](https://user-images.githubusercontent.com/45920345/56250202-786dc780-6063-11e9-991d-c0572a5a91c8.png)
 
-Use our deploy button to get your own copy of the repository. 
+## Getting started: build and customize your own site.
+
+Use the Netlify deploy button to get your own copy of the repository. 
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/explorablelabs/science-cms/)
 
@@ -55,3 +56,4 @@ All SVG icons stored in `site/static/img/icons` are automatically optimized with
   <use xlink:href="#SVG-ID"></use>
 </svg>
 ```
+

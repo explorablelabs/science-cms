@@ -13,21 +13,27 @@
 
     {{ if .Params.molecule }}
       <div class="pb4">
-        <p>This molecule is set from Admin config:</p>
+        <p>This molecule is shown after a user enters it in the admin panel:</p>
         <canvas width="150" height="150" data-smiles="{{.Params.molecule}}"></canvas>
       </div>
     {{ end }}
 
     {{ if .Params.molecule_list }}
       <div class="pb4">
-        <p>These molecules are set if another script defines molecule_list:</p>
+        <p>These molecules are shown because a Python script defined parameter 'molecule_list':</p>
         {{ range split .Params.molecule_list "." }}
           <canvas width="150" height="150" data-smiles="{{.}}"></canvas>
         {{ end }}
       </div>
     {{ end }}
 
-    {{ partial "study_chart" (dict "csv" .Title "xlabel" " Time" "ylabel" " Measure" "upload_date" .Params.datestring "chartid" "1") }}
+    {{ if .Params.chart_csv }}
+      {{ if .Params.chart_xlabel }}
+        {{ if .Params.chart_ylabel }}
+          {{ partial "chart_csv" (dict "csv" .Params.chart_csv "xlabel" .Params.chart_xlabel "ylabel" .Params.chart_ylabel "upload_date" .Params.datestring "chartid" "1") }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
 
   </div>
 {{ end }}

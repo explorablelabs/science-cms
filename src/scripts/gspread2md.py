@@ -48,13 +48,14 @@ yaml_text += "image: '/img/gsheet_screenshot.png'\n"
 yaml_text += "molecule_list: '%s'\n" % list_of_molecules
 yaml_text += "---\n"
 
-# Loop through each row...
+# Loop through each row to get IC50 data if you want to display this as well
+# TODO: make a nice table to display this. It doesn't look great just as text.
 for row_index, row in enumerate(sheetdata1):
   if row.get("approved") == "x":
     fake_ic50 = row.get("fake_ic50")
     molecule_id = row.get("molecule_id")
-    cell_text = str(molecule_id) + ": " + str(fake_ic50) + "\n "
-    yaml_text += cell_text
+    #cell_text = str(molecule_id) + ": " + str(fake_ic50) + "\n "
+    #yaml_text += cell_text
         
 # Write our YAML string to the new text file and close it.
 new_yaml.write(yaml_text + "---\n")
