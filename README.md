@@ -13,7 +13,7 @@ This is a science-focused template built with [Victor Hugo](https://github.com/n
 ![molecule widget](https://user-images.githubusercontent.com/45920345/56252021-b6bab500-606a-11e9-8fbd-55ecb1057072.png) 
 ![molecule pic](https://user-images.githubusercontent.com/45920345/56250202-786dc780-6063-11e9-991d-c0572a5a91c8.png)
 
-![chart widget](https://user-images.githubusercontent.com/45920345/56251911-3bf19a00-606a-11e9-9fba-2b21da25012e.png)
+![chart widget](https://user-images.githubusercontent.com/45920345/56252160-6d1e9a00-606b-11e9-89c2-e94aa2c6aa4b.png)
 ![chart output](https://user-images.githubusercontent.com/45920345/56251912-3bf19a00-606a-11e9-8e71-dab8f9a13bdf.png)
 
 ## Getting started: build and customize your own site.
