@@ -10,13 +10,15 @@ This is a science-focused template built with [Victor Hugo](https://github.com/n
 * This SCIENCE template Admin page is the same as the Netlify demo, but includes extra widget options beyond the basics like Text, Image, File, etc. They are: Molecule (for drawing 2D molecules based on SMILES) and ChartCSV (for charting CSV data that is uploaded via a file). 
 * Edit the page by typing on the left side of the [admin editor](https://user-images.githubusercontent.com/45920345/56070185-51e61e80-5d3b-11e9-977f-525177004b43.png) to produce a preview on the right. Publish when you are ready!
 
+![admin page](https://user-images.githubusercontent.com/45920345/56252456-af94a680-606c-11e9-8b2f-610926a2f80e.png)
+
 ![molecule widget](https://user-images.githubusercontent.com/45920345/56252021-b6bab500-606a-11e9-8fbd-55ecb1057072.png) 
 ![molecule pic](https://user-images.githubusercontent.com/45920345/56250202-786dc780-6063-11e9-991d-c0572a5a91c8.png)
 
 ![chart widget](https://user-images.githubusercontent.com/45920345/56252160-6d1e9a00-606b-11e9-89c2-e94aa2c6aa4b.png)
 ![chart output](https://user-images.githubusercontent.com/45920345/56251912-3bf19a00-606a-11e9-8e71-dab8f9a13bdf.png)
 
-## Getting started: build and customize your own site.
+## Getting started: customize your own site.
 
 Use the Netlify deploy button to get your own copy of the repository. 
 
