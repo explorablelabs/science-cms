@@ -13,7 +13,8 @@
 
     {{ if .Params.molecule }}
       <div class="pb4">
-        <p>This molecule is shown after a user enters it in the admin panel:</p>
+        <br>
+        <p>This molecule is shown because a user entered it in the admin panel:</p>
         <canvas width="150" height="150" data-smiles="{{.Params.molecule}}"></canvas>
       </div>
     {{ end }}
@@ -30,6 +31,7 @@
     {{ if .Params.chart_csv }}
       {{ if .Params.chart_xlabel }}
         {{ if .Params.chart_ylabel }}
+          <p>This chart is shown because a user uploaded it in the admin panel:</p>
           {{ partial "chart_csv" (dict "csv" .Params.chart_csv "xlabel" .Params.chart_xlabel "ylabel" .Params.chart_ylabel "upload_date" .Params.datestring "chartid" "1") }}
         {{ end }}
       {{ end }}

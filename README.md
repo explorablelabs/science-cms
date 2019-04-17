@@ -1,7 +1,7 @@
 # Science Hugo template for Netlify CMS with Netlify Identity
 
 * If you would like to contribute:
-  * Right now chart csv path is hard-coded. Need to use the existing File upload widget, and get the csv path from there.
+  * It would be nice for the charting to be more flexible; right now it makes a lot of assumptions about the input.
 
 This is a science-focused template built with [Victor Hugo](https://github.com/netlify/victor-hugo) and [Netlify CMS](https://github.com/netlify/netlify-cms), originalled designed and developed by [Darin Dimitroff](http://www.darindimitroff.com/), [spacefarm.digital](https://www.spacefarm.digital). Modified by [Explorable Labs](https://www.explorablelabs.com) to include the ability to draw small molecules (via smiles-drawer.js), and data charts (with Chart.js).
 
@@ -11,6 +11,9 @@ This is a science-focused template built with [Victor Hugo](https://github.com/n
 * Edit the page by typing on the left side of the [admin editor](https://user-images.githubusercontent.com/45920345/56070185-51e61e80-5d3b-11e9-977f-525177004b43.png) to produce a preview on the right. Publish when you are ready!
 
 ![molecule widget](https://user-images.githubusercontent.com/45920345/56250201-77d53100-6063-11e9-9590-ae572dcf4d35.png) ![molecule pic](https://user-images.githubusercontent.com/45920345/56250202-786dc780-6063-11e9-991d-c0572a5a91c8.png)
+
+![chart widget](https://user-images.githubusercontent.com/45920345/56251911-3bf19a00-606a-11e9-9fba-2b21da25012e.png)
+![chart output](https://user-images.githubusercontent.com/45920345/56251912-3bf19a00-606a-11e9-8e71-dab8f9a13bdf.png)
 
 ## Getting started: build and customize your own site.
 
