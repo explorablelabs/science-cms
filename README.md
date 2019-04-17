@@ -3,17 +3,21 @@
 * If you would like to contribute:
   * It would be nice for the charting to be more flexible; right now it makes a lot of assumptions about the input.
 
-This is a science-focused template built with [Victor Hugo](https://github.com/netlify/victor-hugo) and [Netlify CMS](https://github.com/netlify/netlify-cms), originalled designed and developed by [Darin Dimitroff](http://www.darindimitroff.com/), [spacefarm.digital](https://www.spacefarm.digital). Modified by [Explorable Labs](https://www.explorablelabs.com) to include the ability to draw small molecules (via smiles-drawer.js), and data charts (with Chart.js).
+This is a science-focused fork of the [Netlify CMS](https://github.com/netlify/netlify-cms), built with [Victor Hugo](https://github.com/netlify/victor-hugo), originalled designed and developed by [Darin Dimitroff](http://www.darindimitroff.com/), [spacefarm.digital](https://www.spacefarm.digital). Modified by [Explorable Labs](https://www.explorablelabs.com) to include the ability to draw small molecules (via smiles-drawer.js), and data charts (with Chart.js).
 
 ## [DEMO](https://science-cms-demo.netlify.com)
 * Play with an [example Admin page](https://cms-demo.netlify.com/#/collections/posts) for Netlify CMS.
 * This SCIENCE template Admin page is the same as the Netlify demo, but includes extra widget options beyond the basics like Text, Image, File, etc. They are: Molecule (for drawing 2D molecules based on SMILES) and ChartCSV (for charting CSV data that is uploaded via a file). 
-* Edit the page by typing on the left side of the [admin editor](https://user-images.githubusercontent.com/45920345/56070185-51e61e80-5d3b-11e9-977f-525177004b43.png) to produce a preview on the right. Publish when you are ready!
+* Edit the page by typing in the React-based admin editor. Publish when you are ready!
 
 ![admin page](https://user-images.githubusercontent.com/45920345/56252456-af94a680-606c-11e9-8b2f-610926a2f80e.png)
 
+* Molecule widget accepts SMILES strings:
+
 ![molecule widget](https://user-images.githubusercontent.com/45920345/56252021-b6bab500-606a-11e9-8fbd-55ecb1057072.png) 
 ![molecule pic](https://user-images.githubusercontent.com/45920345/56250202-786dc780-6063-11e9-991d-c0572a5a91c8.png)
+
+* Charting accepts a CSV file (with 3 columns for now: label, X, Y)
 
 ![chart widget](https://user-images.githubusercontent.com/45920345/56252160-6d1e9a00-606b-11e9-89c2-e94aa2c6aa4b.png)
 ![chart output](https://user-images.githubusercontent.com/45920345/56251912-3bf19a00-606a-11e9-8e71-dab8f9a13bdf.png)
@@ -22,7 +26,7 @@ This is a science-focused template built with [Victor Hugo](https://github.com/n
 
 Use the Netlify deploy button to get your own copy of the repository. 
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/explorablelabs/science-cms/)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/explorablelabs/science-cms)
 
 This will setup everything needed for running the CMS:
 
