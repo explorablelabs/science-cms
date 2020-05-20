@@ -5,7 +5,7 @@ chardet==3.0.4
 cryptography==2.4.2
 enum34==1.1.6
 gspread==0.6.2
-httplib2==0.12.0
+httplib2==0.18.0
 idna==2.8
 ipaddress==1.0.22
 ndg-httpsclient==0.5.1
